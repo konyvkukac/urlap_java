@@ -1,0 +1,49 @@
+html
+{background-color: rgb(240, 255, 174);
+}
+container{
+    background-color: rgb(240, 255, 174);
+}
+@font-face {
+      font-family:"Shadows_Into_Light" ;
+      src:url("fonts/Shadow_Into_Light/ShadowsIntoLight-Regular.ttf");
+  }
+  @font-face{
+    font-family:"Aclonica" ;
+    src:url("fonts/Aclonica/Aclonica-Regular.ttf");  
+  }
+  @font-face{
+    font-family:"Lobster" ;
+    src:url("fonts/Lobster/Lobster-Regular.ttf");  
+  }
+  @font-face{
+    font-family:"Lemonada" ;
+    src:url("fonts/Lemonada/Lemonada-VariableFont_wght.ttf");  
+  }
+  @font-face{
+    font-family:"Yellowtail" ;
+    src:url("fonts/Yellowtail/Yellowtail-Regular.ttf");  
+  }
+  @font-face{
+    font-family:"Core Sans 45 Regular" ;
+    src:url("fonts/Core Sans 45 Regular/CoreSansA45Regular.ttf");  
+  }
+
+h4{color:green; 
+    font-family:"Shadows_Into_Light";
+    font-size: 30px;
+    font-weight: 700;
+}  
+Fieldset{
+    color:green;
+    font-size: xx-large; 
+    font-family:"Shadows_Into_Light";
+}
+small {
+  color: rgb(243, 52, 4);
+  font-weight: 600;
+}
+form-group{color:rgb(240, 255, 174) ;
+
+}
+  

@@ -6,53 +6,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="/Bootstrap/bootstrap-4.5.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
   <title>JavaScript</title>
 
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" >
     <div class="row">
+        <div class="col-5"></div>
+        <div class="col-2">
 
-      <div class="col-5"></div>
+            <fieldset>
+                <legend>
+                    <h4>Megrendelés</h4>
+                </legend>
 
-      <div class="col-2">
-        <h1>Rendelés</h1>
+                <div class="form-group">
+                    <label>Pizza </label>
+                    <input type="number" name="pizza" id="pizza" value=1200>
+                </div>
+                <div class="form-group">
+                    <label>Darab</label>
+                    <input type="number" name="darab" id="darab" value="1">
 
-        <form id="order">
-          <div class="form-group">
-            <label for="Pizza">Pizza</label>
-            <input type="number" name="pizza-input" class="form-controll">
-          </div>
-          <!--
-  <div class="form-group">
-    <label for="Darab">Darab</label>
-    <input type="text" name="mennyiség" class="form-controll">
-  </div>
--->
-          <div class="form-group">
-            <label for="Darab">Mennyiség</label>
-            <input name="total-input" type="number" class="form-controll"> <br><br>
-          </div>
-          <!--
-            <button class="btn btn-success">Megrendelés</button>
-          -->
-          <button type="button" class="btn btn-success mb-3" onclick="validateForm()">Megrendelés</button>
+                    <small class="form text text muted">
+                        Minimum 1, maximum 10 termék vásárolható.
+                    </small>
+                </div>
+                <div class="form-group">
+                    Fizetendő: <span class="szorzat">0</span> Forint. </div>
 
-        </form>
+                <!-- Fizetendő mező létrehozása -->
+                <button onclick="szorzas()" type="btn btn-success">Rendelés</button>
 
-      </div>
-      <div class="col-5"></div>
+            </fieldset>
 
 
+        </div>
+        <div class="col-5"></div>
     </div>
-
-  </div>
+</div>
 </body>
 
 
