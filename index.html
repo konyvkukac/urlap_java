@@ -6,47 +6,124 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
   <title>JavaScript</title>
 
 </head>
 
 <body>
-  <div class="container" >
-    <div class="row">
-        <div class="col-5"></div>
-        <div class="col-2">
 
-            <fieldset>
-                <legend>
-                    <h4>Megrendelés</h4>
-                </legend>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="modal.html">Menü</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <div class="form-group">
-                    <label>Pizza </label>
-                    <input type="number" name="pizza" id="pizza" value=1200>
-                </div>
-                <div class="form-group">
-                    <label>Darab</label>
-                    <input type="number" name="darab" id="darab" value="1">
-
-                    <small class="form text text muted">
-                        Minimum 1, maximum 10 termék vásárolható.
-                    </small>
-                </div>
-                <div class="form-group">
-                    Fizetendő: <span class="szorzat">0</span> Forint. </div>
-
-                <!-- Fizetendő mező létrehozása -->
-                <button onclick="szorzas()" type="btn btn-success">Rendelés</button>
-
-            </fieldset>
-
-
-        </div>
-        <div class="col-5"></div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="bt.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <!-- Disabled, gomb letiltása
+               <li class="nav-item">
+                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+               </li>
+           -->
+        </li>
+        <!-- FontAwesome ikon beillesztése -->
+        <li class="fas-item">
+          <a class="nav-weather" href="Tables.html">Időjárás</i></a>
+          <i class="fas fa-cloud-sun-rain"></i>
+        </li>
+      </ul>
+      <!--  
+            Keresőmező 
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            -->
     </div>
-</div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl" style="background-color: rgb(255, 218, 169);">
+        <h4> Lorem Ipsum </h4>
+        <p>
+          "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+          "Nincs ki a fájdalmat önmagáért szeretné, ki törekedne rá és birtokolná, csupán a fájdalomért..."
+          ________________________________________
+        </p>
+      </div>
+
+      <div class="col-xl" style="background-color: rgb(255, 218, 169);">
+        <!--<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>  -->
+        <fieldset>
+
+          <legend>
+            <h4>Megrendelés</h4>
+          </legend>
+
+          <div class="form-group">
+            <label>Pizza </label>
+            <input type="number" name="pizza" id="pizza" value=1200>
+          </div>
+          <div class="form-group">
+            <label>Darab</label>
+            <input type="number" name="darab" id="darab" value="1">
+
+            <small class="form text text muted">
+              Minimum 1, maximum 10 termék vásárolható.
+            </small>
+          </div>
+          <div class="form-group">
+            Fizetendő: <span class="szorzat">0</span> Forint. </div>
+
+          <!-- Fizetendő mező létrehozása -->
+          <button onclick="szorzas()" type="button" class="btn-btn success">Rendelés</button>
+
+        </fieldset>
+      </div>
+      <div class="col-xl" style="background-color: rgb(255, 218, 169);">
+        <p>Lorem ipsum</p>
+          <span>
+            <h4> dolor sit</h4>
+          </span>
+          <p>
+          amet, consectetur adipiscing elit. In efficitur nulla eu dolor consectetur, non gravida
+          elit rhoncus. Ut laoreet tristique sodales. Etiam vulputate vehicula tellus eget gravida. Nulla tristique
+          volutpat nunc. Vivamus porta ultricies mattis. Mauris eu commodo lorem. Suspendisse elementum, mi et vulputate
+          gravida, neque ex vehicula massa, in facilisis arcu lacus a metus.
+        </p>
+      </div>
+
+
+    </div>
+  </div>
 </body>
 
 
