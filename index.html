@@ -18,7 +18,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-ligtht bg-ligh">
     <a class="navbar-brand" href="modal.html">Menü</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,17 +30,24 @@
         <li class="nav-item active">
           <a class="nav-link" href="bt.html">Home<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Link</a>
-        </li>
+        <!-- 
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Link</a>
+          </li>
+        -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown
+            A hét napjai
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Hétfő</a>
+            <a class="dropdown-item" href="#">Kedd</a>
+            <a class="dropdown-item" href="#">Szerda</a>
+            <a class="dropdown-item" href="#">Csütörtök</a>
+            <a class="dropdown-item" href="#">Péntek</a>
+            <a class="dropdown-item" href="#">Szombat</a>
+            <a class="dropdown-item" href="#">Vasárnap</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
@@ -51,16 +58,19 @@
                </li>
            -->
         </li>
+        <a class="nav-weather" href="Tables.html">Időjárás</i></a>
         <!-- FontAwesome ikon beillesztése -->
-        <li class="fas-item">
-          <a class="nav-weather" href="Tables.html">Időjárás</i></a>
+          <li class="fas-item">
           <i class="fas fa-cloud-sun-rain"></i>
         </li>
       </ul>
-      <!--  
-            Keresőmező 
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <li class="fas-item">
+            <i class="fas fa-cloud-sun-rain"></i>
+          </li>
+      
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Max °C, Min  °C" aria-label="">
+            <!--  
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             -->
@@ -72,10 +82,10 @@
     <div class="row">
 
       <div class="col-xl" style="background-color: rgb(255, 218, 169);">
-        <h4> Lorem Ipsum </h4>
+        <h4> 
+          Heti időjárás
+        </h4>
         <p>
-          "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-          "Nincs ki a fájdalmat önmagáért szeretné, ki törekedne rá és birtokolná, csupán a fájdalomért..."
           ________________________________________
         </p>
       </div>
@@ -104,21 +114,18 @@
             Fizetendő: <span class="szorzat">0</span> Forint. </div>
 
           <!-- Fizetendő mező létrehozása -->
-          <button onclick="szorzas()" type="button" class="btn-btn success">Rendelés</button>
+          <button onclick="szorzas()" type="button" class="btn btn-success">Rendelés</button>
 
         </fieldset>
       </div>
       <div class="col-xl" style="background-color: rgb(255, 218, 169);">
-        <p>Lorem ipsum</p>
           <span>
-            <h4> dolor sit</h4>
+            <h4>Napi ajánlatok</h4>
           </span>
           <p>
-          amet, consectetur adipiscing elit. In efficitur nulla eu dolor consectetur, non gravida
-          elit rhoncus. Ut laoreet tristique sodales. Etiam vulputate vehicula tellus eget gravida. Nulla tristique
-          volutpat nunc. Vivamus porta ultricies mattis. Mauris eu commodo lorem. Suspendisse elementum, mi et vulputate
-          gravida, neque ex vehicula massa, in facilisis arcu lacus a metus.
-        </p>
+            A napi hőmérséklettől függően különböző ajánlatokkal lepjük meg vásárlóinkat.
+          </p>
+          <p></p>
       </div>
 
 

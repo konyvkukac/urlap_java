@@ -37,15 +37,21 @@ h4{color:green;
 p{
   font-family: "Lemonada";
   font-size: 25px;
+  /* text-align: justify; */
 
 }
 Fieldset{
     background-color: rgb(240, 255, 174);
     color:green;
-    font-size: xx-large; 
+    font-size: 35px; 
     font-family:"Shadows_Into_Light";
 }
 small {
   color: rgb(243, 52, 4);
   font-weight: 600;
+}
+nav {  background-color: rgb(243, 148, 81);
+    font-family:"Shadows_Into_Light";
+      color: black;
+  font-size: 30px;
 }
