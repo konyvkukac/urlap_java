@@ -1,5 +1,7 @@
 html
 {background-color: rgb(240, 255, 174);
+ /* background-image: url(Weather.png);
+  background-repeat: repeat-x;}*/
 }
 body{
   background-color: rgb(240, 255, 174);

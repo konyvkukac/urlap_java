@@ -24,35 +24,15 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <a class="navbar navbar-expand-lg navbar-ligtht bg-ligh" href="users.html" role="button">users</a>
 
-
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">
-      A hét napjai
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a class="dropdown-item" href="#">Hétfő</a>
-      <a class="dropdown-item" href="#">Kedd</a>
-      <a class="dropdown-item" href="#">Szerda</a>
-      <a class="dropdown-item" href="#">Csütörtök</a>
-      <a class="dropdown-item" href="#">Péntek</a>
-      <a class="dropdown-item" href="#">Szombat</a>
-      <a class="dropdown-item" href="#">Vasárnap</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Egyéb szöveges</a>
-    </div>
-
-    <a class="nav-weather" href="Tables.html">Időjárás</a>
-    
-    <!-- FontAwesome ikon beillesztése -->
-    <i class="fas fa-cloud-sun-rain"></i>
 
   </nav>
-
-
+  
+  
   <div class="container">
     <div class="row">
-
+      
       <div class="col-xl" style="background-color: rgb(255, 218, 169);">
         <h4>
           Kínálatunk:
@@ -71,15 +51,15 @@
           _Stb..__________________________________
         </p>
       </div>
-
+      
       <div class="col-xl" style="background-color: rgb(255, 218, 169);">
         <!--<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>  -->
         <fieldset>
-
+          
           <legend>
             <h4>Megrendelés</h4>
           </legend>
-
+          
           <div class="form-group">
             <label>Pizza </label>
             <input type="number" name="pizza" id="pizza" value=1200>
@@ -87,38 +67,59 @@
           <div class="form-group">
             <label>Darab</label>
             <input type="number" name="darab" id="darab" value="1">
-
+            
             <small class="form text text muted">
               Minimum 1, maximum 10 termék vásárolható.
             </small>
           </div>
           <div class="form-group">
             Fizetendő: <span class="szorzat">0</span> Forint. </div>
-
-          <!-- Fizetendő mező létrehozása -->
-          <button onclick="szorzas()" type="button" class="btn btn-success">Rendelés</button>
-
-        </fieldset>
+            
+            <!-- Fizetendő mező létrehozása -->
+            <button onclick="szorzas()" type="button" class="btn btn-success">Rendelés</button>
+            
+          </fieldset>
+        </div>
+        
+        <div class="col-xl" style="background-color: rgb(255, 218, 169);">
+          <span>
+            
+            <i class="fas fa-cloud-sun-rain"></i>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Max ....°C, Min ....°C" aria-label="">
+            </form>
+            
+            <a class="nav-weather" href="Tables.html">Heti előrejelzés</a>
+            
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              A hét napjai
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Hétfő</a>
+              <a class="dropdown-item" href="#">Kedd</a>
+              <a class="dropdown-item" href="#">Szerda</a>
+              <a class="dropdown-item" href="#">Csütörtök</a>
+              <a class="dropdown-item" href="#">Péntek</a>
+              <a class="dropdown-item" href="#">Szombat</a>
+              <a class="dropdown-item" href="#">Vasárnap</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Egyéb szöveges</a>
+                   
+            </div>
+            <!-- FontAwesome ikon beillesztése 
+              <i class="fas fa-cloud-sun-rain"></i>
+            -->
+            <h4>Napi ajánlatok</h4>
+          </span>
+          <p>
+            A napi hőmérséklettől függően különböző ajánlatokkal lepjük meg vásárlóinkat.
+          </p>
+          <p></p>
+        </div>
+        
       </div>
-
-      <div class="col-xl" style="background-color: rgb(255, 218, 169);">
-        <span>
-
-          <i class="fas fa-cloud-sun-rain"></i>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Max ....°C, Min ....°C" aria-label="">
-          </form>
-
-          <h4>Napi ajánlatok</h4>
-        </span>
-        <p>
-          A napi hőmérséklettől függően különböző ajánlatokkal lepjük meg vásárlóinkat.
-        </p>
-        <p></p>
-      </div>
-
     </div>
-  </div>
 </body>
 
 
