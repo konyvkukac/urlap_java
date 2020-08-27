@@ -9,19 +9,21 @@ let users = [
 ];
 
 
-/* //Táblázat létrehozása, egy oszlop létrehozása
-let userTable = document.querySelector("#userTable tbody"); 
-for (let k in users){
-    let tr = document.createElement("tr"); // táblázat elemeinek létrehozása
-    let td = document.createElement("td");
-    td.innerHTML = parseInt(k)+1; //td tartalmának létrehozása
-tr.appendChild(td);  // td hozzáadása gyerekként tr-hez
-userTable.appendChild(tr); // tr hozzáadása  userTable-hoz
+/*
+//Táblázat létrehozása, egy oszlop létrehozása
+
+let userTable = document.querySelector("#userTable tbody");
+for (let k in users) {                      // users tömb bejárása
+    let tr = document.createElement("tr");  // táblázat sorainak létrehozása
+    let td = document.createElement("td");  // cella a soron belül
+    td.innerHTML = parseInt(k) + 1;         // cella tartalmának létrehozása 
+    tr.appendChild(td);                     // cella hozzáadása gyerekként sorhoz
+    userTable.appendChild(tr);              // sor hozzáadása  userTable-hoz
 }; */
 
 let userTable = document.querySelector("#userTable tbody");
 
-let createTd = (html, parent) => {  //td-k létrehozása külön ciklussal
+let createTd = (html, parent) => {          // cellák létrehozása külön ciklussal
     let td = document.createElement("td");
     td.innerHTML = html;
     parent.appendChild(td);
@@ -36,7 +38,7 @@ for (let k in users) {
     userTable.appendChild(tr);
 };
 /*
-Minta 
+Minta
 
 let table = document.querySelector("#demoTable");
 for ( let i = 0; i < users.length; i++ ) {
@@ -48,7 +50,7 @@ for ( let i = 0; i < users.length; i++ ) {
   }
   table.appendChild(tr);
 }
-A helyes táblázathoz két egymásba ágyazott ciklus kell. 
+A helyes táblázathoz két egymásba ágyazott ciklus kell.
 Az egyikben létrehozod a sorokat, a másikban a cellákat a sorokon belül.
  Amikor elkészíted a fenti példát a saját gépeden, használd a Google Chrome beépített debug eszközét ahogy tanultuk.
  Állítsd meg minden sorban a ciklusokat és nézd végig a változók pillanatnyi értékét.
