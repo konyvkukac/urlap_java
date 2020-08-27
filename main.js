@@ -27,5 +27,9 @@
         szorzat.innerHTML = osszeg;  //A HTML kód 'szorzat span' mező értékének kiíratása. 
         
     }
+    // Eseménykezelés
+
+
+    
     
     

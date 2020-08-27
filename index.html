@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+   <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <title>JavaScript</title>
@@ -20,19 +20,16 @@
 
   <nav class="navbar navbar-expand-lg navbar-ligtht bg-ligh">
     <a class="navbar-brand" href="index.html">Menü</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+
     <a class="navbar navbar-expand-lg navbar-ligtht bg-ligh" href="users.html" role="button">users</a>
 
 
   </nav>
-  
-  
+
+
   <div class="container">
     <div class="row">
-      
+
       <div class="col-xl" style="background-color: rgb(255, 218, 169);">
         <h4>
           Kínálatunk:
@@ -51,15 +48,21 @@
           _Stb..__________________________________
         </p>
       </div>
-      
+
       <div class="col-xl" style="background-color: rgb(255, 218, 169);">
         <!--<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>  -->
+
         <fieldset>
-          
+
           <legend>
             <h4>Megrendelés</h4>
           </legend>
-          
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <strong>Kedves Vevők!</strong> A rendeléshez, kérjük töltsék ki az űrlapot.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
           <div class="form-group">
             <label>Pizza </label>
             <input type="number" name="pizza" id="pizza" value=1200>
@@ -67,70 +70,72 @@
           <div class="form-group">
             <label>Darab</label>
             <input type="number" name="darab" id="darab" value="1">
-            
+
             <small class="form text text muted">
               Minimum 1, maximum 10 termék vásárolható.
             </small>
           </div>
           <div class="form-group">
             Fizetendő: <span class="szorzat">0</span> Forint. </div>
-            
-            <!-- Fizetendő mező létrehozása -->
-            <button onclick="szorzas()" type="button" class="btn btn-success">Rendelés</button>
-            
-          </fieldset>
-        </div>
-        
-        <div class="col-xl" style="background-color: rgb(255, 218, 169);">
-          <span>
-            
-            <i class="fas fa-cloud-sun-rain"></i>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Max ....°C, Min ....°C" aria-label="">
-            </form>
-            
-            <a class="nav-weather" href="Tables.html">Heti előrejelzés</a>
-            
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              A hét napjai
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Hétfő</a>
-              <a class="dropdown-item" href="#">Kedd</a>
-              <a class="dropdown-item" href="#">Szerda</a>
-              <a class="dropdown-item" href="#">Csütörtök</a>
-              <a class="dropdown-item" href="#">Péntek</a>
-              <a class="dropdown-item" href="#">Szombat</a>
-              <a class="dropdown-item" href="#">Vasárnap</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Egyéb szöveges</a>
-                   
-            </div>
-            <!-- FontAwesome ikon beillesztése 
+
+          <!-- Fizetendő mező létrehozása -->
+          <button onclick="szorzas()" type="button" class="btn btn-success">Rendelés</button>
+
+        </fieldset>
+      </div>
+
+      <div class="col-xl" style="background-color: rgb(255, 218, 169);">
+        <span>
+
+          <i class="fas fa-cloud-sun-rain"></i>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Max ....°C, Min ....°C" aria-label="">
+          </form>
+
+          <a class="nav-weather" href="Tables.html">Heti előrejelzés</a>
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            A hét napjai
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Hétfő</a>
+            <a class="dropdown-item" href="#">Kedd</a>
+            <a class="dropdown-item" href="#">Szerda</a>
+            <a class="dropdown-item" href="#">Csütörtök</a>
+            <a class="dropdown-item" href="#">Péntek</a>
+            <a class="dropdown-item" href="#">Szombat</a>
+            <a class="dropdown-item" href="#">Vasárnap</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Egyéb szöveges</a>
+
+          </div>
+          <!-- FontAwesome ikon beillesztése 
               <i class="fas fa-cloud-sun-rain"></i>
             -->
-            <h4>Napi ajánlatok</h4>
-          </span>
-          <p>
-            A napi hőmérséklettől függően különböző ajánlatokkal lepjük meg vásárlóinkat.
-          </p>
-          <p></p>
-        </div>
-        
+          <h4>Napi ajánlatok</h4>
+        </span>
+        <p>
+          A napi hőmérséklettől függően különböző ajánlatokkal lepjük meg vásárlóinkat.
+        </p>
+        <p></p>
       </div>
+
     </div>
+  </div>
 </body>
 
 
 
-<script src="main.js" charset="UTF-8"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  
+  <script src="main.js" charset="UTF-8"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
   integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 
 
 </html>
